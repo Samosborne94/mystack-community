@@ -1,8 +1,8 @@
 # MyStack - AI Resources Scraping Platform
 
-[![Build Status](https://github.com/yourusername/mystack-platform/workflows/CI/badge.svg)](https://github.com/yourusername/mystack-platform/actions)
+[![Build Status](https://github.com/Samosborne94/mystack-community/workflows/CI/badge.svg)](https://github.com/Samosborne94/mystack-community/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code Quality](https://img.shields.io/badge/code%20quality-A-green)](https://github.com/yourusername/mystack-platform)
+[![Code Quality](https://img.shields.io/badge/code%20quality-A-green)](https://github.com/Samosborne94/mystack-community)
 
 > The world's largest AI resource database and marketplace. Automatically scrape, process, and structure AI-related content from across the internet, creating a comprehensive repository of prompts, tutorials, research papers, videos, and more.
 
@@ -71,8 +71,8 @@ MyStack is a scalable, AI-driven data scraping and processing platform that buil
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/mystack-platform.git
-   cd mystack-platform
+   git clone https://github.com/Samosborne94/mystack-community.git
+   cd mystack-community
    ```
 
 2. **Install dependencies**
@@ -91,7 +91,7 @@ MyStack is a scalable, AI-driven data scraping and processing platform that buil
 ## 📁 Project Structure
 
 ```
-mystack-platform/
+mystack-community/
 ├── .github/                # GitHub workflows and templates
 │   ├── workflows/          # CI/CD workflows
 │   └── ISSUE_TEMPLATE/     # Issue templates
@@ -214,16 +214,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-- **Project Lead**: [Your Name](https://github.com/yourusername)
-- **Frontend Developer**: [Your Name](https://github.com/yourusername)
-- **Backend Developer**: [Your Name](https://github.com/yourusername)
-- **DevOps Engineer**: [Your Name](https://github.com/yourusername)
+- **Project Lead**: [Sam Osborne](https://github.com/Samosborne94)
+- **Frontend Developer**: [Sam Osborne](https://github.com/Samosborne94)
+- **Backend Developer**: [Sam Osborne](https://github.com/Samosborne94)
+- **DevOps Engineer**: [Sam Osborne](https://github.com/Samosborne94)
 
 ## 📞 Contact
 
 - **Email**: contact@mystack.ai
-- **Discord**: [MyStack Community](https://discord.gg/mystack)
-- **Twitter**: [@MyStackAI](https://twitter.com/MyStackAI)
+- **GitHub**: [MyStack Community](https://github.com/Samosborne94/mystack-community)
+- **Issues**: [Report Issues](https://github.com/Samosborne94/mystack-community/issues)
 
 ## 🙏 Acknowledgments
 
