@@ -1,13 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif'
+        ]
       },
       colors: {
         primary: {
@@ -20,7 +29,7 @@ export default {
           600: '#2563eb',
           700: '#1d4ed8',
           800: '#1e40af',
-          900: '#1e3a8a',
+          900: '#1e3a8a'
         },
         dark: {
           50: '#f8fafc',
@@ -33,18 +42,18 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-          950: '#020617',
+          950: '#020617'
         },
         surface: '#1a1a1b',
-        background: '#0a0a0b',
+        background: '#0a0a0b'
       },
       backdropBlur: {
-        xs: '2px',
+        xs: '2px'
       },
       borderRadius: {
-        '4xl': '2rem',
-      },
-    },
+        '4xl': '2rem'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

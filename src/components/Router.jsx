@@ -20,11 +20,7 @@ const Router = () => {
     }
   }
 
-  return (
-    <Layout onNavigate={navigate}>
-      {renderCurrentPage()}
-    </Layout>
-  )
+  return <Layout onNavigate={navigate}>{renderCurrentPage()}</Layout>
 }
 
 export default Router

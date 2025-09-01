@@ -44,11 +44,13 @@ MyStack is a scalable, AI-driven data scraping and processing platform that buil
 ## 🛠️ Technology Stack
 
 ### Frontend
+
 - **React 18** with Vite for fast development
 - **Tailwind CSS** for modern styling
 - **TypeScript** for type safety (planned)
 
 ### Backend (Planned)
+
 - **Python 3.11+** with FastAPI
 - **PostgreSQL 15+** with TimescaleDB extension
 - **Elasticsearch 8.x** for search
@@ -56,6 +58,7 @@ MyStack is a scalable, AI-driven data scraping and processing platform that buil
 - **Redis 7.x** for caching
 
 ### Infrastructure
+
 - **Docker** & **Kubernetes** for containerization
 - **AWS/GCP** for cloud deployment
 - **GitHub Actions** for CI/CD
@@ -64,23 +67,27 @@ MyStack is a scalable, AI-driven data scraping and processing platform that buil
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ and npm
 - Git
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Samosborne94/mystack-community.git
    cd mystack-community
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -114,12 +121,14 @@ mystack-community/
 We follow **Conventional Commits** and a **feature-branching** workflow:
 
 ### Branch Naming
+
 - `feature/description` - New features
 - `fix/description` - Bug fixes
 - `docs/description` - Documentation updates
 - `chore/description` - Maintenance tasks
 
 ### Commit Messages
+
 ```bash
 feat: implement user authentication endpoint
 fix: resolve database connection leak in celery worker
@@ -129,6 +138,7 @@ refactor: simplify data processing logic
 ```
 
 ### Pull Request Process
+
 1. Create feature branch from `main`
 2. Make changes and commit with conventional commits
 3. Push branch and create Pull Request
@@ -154,46 +164,55 @@ npm run type-check
 ## 📊 Project Phases
 
 ### Phase 0: Project Setup ✅
+
 - [x] GitHub repository setup
 - [x] Initial project structure
 - [x] CI/CD pipeline configuration
 
 ### Phase 1: Infrastructure Setup (2 weeks)
+
 - [ ] Kubernetes cluster setup
 - [ ] Database deployment (PostgreSQL, Redis, Elasticsearch)
 - [ ] Monitoring stack (Prometheus, Grafana)
 
 ### Phase 2: Core Components (4 weeks)
+
 - [ ] FastAPI backend development
 - [ ] Database schema and models
 - [ ] Basic API endpoints
 
 ### Phase 3: Scraping Engine (3 weeks)
+
 - [ ] Distributed Scrapy implementation
 - [ ] Playwright/Selenium integration
 - [ ] Rate limiting and politeness policies
 
 ### Phase 4: AI Processing Pipeline (4 weeks)
+
 - [ ] Data processing pipeline
 - [ ] LLM API integration
 - [ ] Content quality scoring
 
 ### Phase 5: Search & Indexing (2 weeks)
+
 - [ ] Elasticsearch integration
 - [ ] Advanced search features
 - [ ] Performance optimization
 
 ### Phase 6: Scaling & Optimization (3 weeks)
+
 - [ ] Horizontal scaling implementation
 - [ ] Load testing and optimization
 - [ ] Auto-scaling policies
 
 ### Phase 7: Security & Compliance (2 weeks)
+
 - [ ] Security audit
 - [ ] GDPR compliance
 - [ ] Data encryption
 
 ### Phase 8: Documentation & Training (2 weeks)
+
 - [ ] API documentation
 - [ ] User guides
 - [ ] Training materials
