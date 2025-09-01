@@ -13,6 +13,7 @@ This project and everyone participating in it is governed by the MyStack Code of
 This section guides you through submitting a bug report for MyStack. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 **Before Submitting A Bug Report:**
+
 - Check the debugging guide
 - Check the FAQ for a list of common questions and problems
 - Perform a cursory search to see if the problem has already been reported
@@ -32,6 +33,7 @@ Bugs are tracked as GitHub issues. Create an issue using the bug report template
 This section guides you through submitting an enhancement suggestion for MyStack, including completely new features and minor improvements to existing functionality.
 
 **Before Submitting An Enhancement Suggestion:**
+
 - Check if the enhancement has already been suggested
 - Check if you're using the latest version
 - Perform a cursory search to see if the enhancement has already been suggested
@@ -55,6 +57,7 @@ Unsure where to begin contributing to MyStack? You can start by looking through 
 ### Pull Requests
 
 The process described here has several goals:
+
 - Maintain MyStack's quality
 - Fix problems that are important to users
 - Engage the community in working toward the best possible MyStack
@@ -82,6 +85,7 @@ We use [Conventional Commits](https://www.conventionalcommits.org/) for our comm
 - `chore`: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
 Examples:
+
 ```
 feat: add search functionality to content cards
 fix: resolve memory leak in scraping worker
@@ -155,6 +159,7 @@ We maintain a comprehensive test suite to ensure code quality:
 - End-to-end tests for critical user journeys
 
 When contributing:
+
 - Write tests for new functionality
 - Update existing tests when modifying behavior
 - Ensure all tests pass before submitting a PR
@@ -162,6 +167,7 @@ When contributing:
 ## Questions?
 
 Don't hesitate to ask questions! You can:
+
 - Open an issue with the "question" label
 - Join our Discord community
 - Email us at contact@mystack.ai

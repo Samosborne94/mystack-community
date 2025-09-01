@@ -17,17 +17,20 @@ This guide covers the development workflow and best practices for the MyStack pl
 ### Development Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/mystack-platform.git
    cd mystack-platform
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -59,27 +62,21 @@ src/
 Follow this pattern for new components:
 
 ```jsx
-import { forwardRef } from 'react'
+import { forwardRef } from "react";
 
-const ComponentName = forwardRef(({ 
-  children, 
-  className = '',
-  ...props 
-}, ref) => {
-  return (
-    <div 
-      ref={ref}
-      className={`base-styles ${className}`}
-      {...props}
-    >
-      {children}
-    </div>
-  )
-})
+const ComponentName = forwardRef(
+  ({ children, className = "", ...props }, ref) => {
+    return (
+      <div ref={ref} className={`base-styles ${className}`} {...props}>
+        {children}
+      </div>
+    );
+  },
+);
 
-ComponentName.displayName = 'ComponentName'
+ComponentName.displayName = "ComponentName";
 
-export default ComponentName
+export default ComponentName;
 ```
 
 ## Development Workflow
@@ -129,6 +126,7 @@ chore: update dependencies
 - Use JSDoc for component props
 
 Example:
+
 ```jsx
 /**
  * SearchBar component for filtering content
@@ -138,7 +136,7 @@ Example:
  */
 const SearchBar = ({ placeholder, onSearch, className = "" }) => {
   // Component logic here
-}
+};
 ```
 
 ### CSS/Tailwind
@@ -150,6 +148,7 @@ const SearchBar = ({ placeholder, onSearch, className = "" }) => {
 - Test across different screen sizes
 
 Good:
+
 ```jsx
 <button className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors">
   Click me
@@ -157,6 +156,7 @@ Good:
 ```
 
 Avoid:
+
 ```jsx
 <div className="cursor-pointer" onClick={handleClick}>
   <span>Click me</span>
@@ -166,16 +166,19 @@ Avoid:
 ## Testing Strategy
 
 ### Unit Tests
+
 - Test individual components and functions
 - Focus on component behavior, not implementation details
 - Use React Testing Library for component tests
 
 ### Integration Tests
+
 - Test component interactions
 - Test data flow between components
 - Mock external dependencies
 
 ### E2E Tests
+
 - Test critical user journeys
 - Test across different browsers and devices
 - Use tools like Playwright or Cypress
@@ -183,16 +186,19 @@ Avoid:
 ## Performance Guidelines
 
 ### Code Splitting
+
 - Use dynamic imports for large components
 - Split routes at the page level
 - Lazy load heavy dependencies
 
 ### State Management
+
 - Use local state when possible
 - Consider Context API for shared state
 - Implement proper memoization with useMemo/useCallback
 
 ### Bundle Optimization
+
 - Use Vite's built-in optimizations
 - Analyze bundle size regularly
 - Remove unused dependencies
@@ -219,16 +225,19 @@ Avoid:
 ### Common Issues
 
 **Styling not applying:**
+
 - Check Tailwind class names for typos
 - Ensure PostCSS is configured correctly
 - Clear browser cache
 
 **Component not re-rendering:**
+
 - Check if state updates are immutable
 - Verify dependency arrays in hooks
 - Use React DevTools to inspect updates
 
 **Build errors:**
+
 - Check import/export statements
 - Ensure all dependencies are installed
 - Review TypeScript errors (when added)
@@ -241,21 +250,21 @@ Current mock data follows the planned API structure:
 
 ```javascript
 const contentItem = {
-  id: 'unique-id',
-  title: 'Content title',
-  description: 'Content description',
-  content_type: 'prompt|tutorial|workflow',
-  category: 'marketing|development|creative',
-  ai_models: ['chatgpt', 'claude'],
-  source_platform: 'github|reddit|medium',
+  id: "unique-id",
+  title: "Content title",
+  description: "Content description",
+  content_type: "prompt|tutorial|workflow",
+  category: "marketing|development|creative",
+  ai_models: ["chatgpt", "claude"],
+  source_platform: "github|reddit|medium",
   quality_score: 85,
   popularity_metrics: {
     views: 1000,
     likes: 50,
-    shares: 10
+    shares: 10,
   },
   // ... more fields
-}
+};
 ```
 
 ### Future API Integration
@@ -287,12 +296,14 @@ When the backend is ready:
 ### Common Development Issues
 
 1. **Node modules issues**
+
    ```bash
    rm -rf node_modules package-lock.json
    npm install
    ```
 
 2. **Port already in use**
+
    ```bash
    lsof -ti:5173 | xargs kill -9
    ```

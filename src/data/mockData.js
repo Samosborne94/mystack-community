@@ -1,11 +1,19 @@
-import { createContentItem, ContentType, Category, AIModel, SourcePlatform } from '../types/index.js'
+import {
+  createContentItem,
+  ContentType,
+  Category,
+  AIModel,
+  SourcePlatform
+} from '../types/index.js'
 
 // Mock data that simulates output from your AI scraping system
 export const mockContentItems = [
   createContentItem({
     id: 'ai-001',
-    title: 'Advanced ChatGPT Marketing Copy Generator with A/B Testing Framework',
-    description: 'Comprehensive prompt template that generates high-converting marketing copy for any product or service. Includes built-in A/B testing variations, emotional triggers, and conversion optimization techniques discovered through scraping 10,000+ successful campaigns.',
+    title:
+      'Advanced ChatGPT Marketing Copy Generator with A/B Testing Framework',
+    description:
+      'Comprehensive prompt template that generates high-converting marketing copy for any product or service. Includes built-in A/B testing variations, emotional triggers, and conversion optimization techniques discovered through scraping 10,000+ successful campaigns.',
     content_type: ContentType.PROMPT,
     category: Category.MARKETING,
     ai_models: [AIModel.CHATGPT, AIModel.GPT4],
@@ -13,10 +21,14 @@ export const mockContentItems = [
     source_platform: SourcePlatform.GITHUB,
     author: {
       name: 'Sarah Johnson',
-      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b35c?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1494790108755-2616b612b35c?w=150',
       reputation: 95,
       verified: true,
-      social_links: { twitter: '@sarahj_marketing', linkedin: 'sarah-johnson-marketing' }
+      social_links: {
+        twitter: '@sarahj_marketing',
+        linkedin: 'sarah-johnson-marketing'
+      }
     },
     scraped_at: '2025-08-20T10:30:00Z',
     processed_at: '2025-08-20T11:15:00Z',
@@ -28,7 +40,13 @@ export const mockContentItems = [
       comments: 78,
       bookmarks: 445
     },
-    tags: ['copywriting', 'conversion', 'a-b-testing', 'email-marketing', 'social-media'],
+    tags: [
+      'copywriting',
+      'conversion',
+      'a-b-testing',
+      'email-marketing',
+      'social-media'
+    ],
     price: 29.99,
     is_free: false,
     content_length: 2400,
@@ -44,11 +62,12 @@ export const mockContentItems = [
       tested_platforms: ['Facebook Ads', 'Google Ads', 'Email Campaigns']
     }
   }),
-  
+
   createContentItem({
     id: 'ai-002',
     title: 'Senior Developer Code Review Assistant - Multi-Language Support',
-    description: 'AI-powered code review prompts that catch bugs, suggest optimizations, and ensure best practices across Python, JavaScript, Go, and Rust. Trained on millions of code reviews from top tech companies.',
+    description:
+      'AI-powered code review prompts that catch bugs, suggest optimizations, and ensure best practices across Python, JavaScript, Go, and Rust. Trained on millions of code reviews from top tech companies.',
     content_type: ContentType.PROMPT,
     category: Category.DEVELOPMENT,
     ai_models: [AIModel.CHATGPT, AIModel.CLAUDE],
@@ -56,7 +75,8 @@ export const mockContentItems = [
     source_platform: SourcePlatform.REDDIT,
     author: {
       name: 'Alex Chen',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
       reputation: 88,
       verified: true,
       social_links: { github: 'alexchen-dev', twitter: '@alexchen_code' }
@@ -71,8 +91,15 @@ export const mockContentItems = [
       comments: 156,
       bookmarks: 234
     },
-    tags: ['code-review', 'debugging', 'best-practices', 'python', 'javascript', 'security'],
-    price: 45.00,
+    tags: [
+      'code-review',
+      'debugging',
+      'best-practices',
+      'python',
+      'javascript',
+      'security'
+    ],
+    price: 45.0,
     is_free: false,
     content_length: 3200,
     difficulty_level: 'advanced',
@@ -91,7 +118,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-003',
     title: 'Creative Writing Story Generator with Character Development',
-    description: 'Unlock unlimited story ideas with this comprehensive creative writing system. Generates unique plots, three-dimensional characters, world-building elements, and narrative structures. Based on analysis of 50,000+ published stories.',
+    description:
+      'Unlock unlimited story ideas with this comprehensive creative writing system. Generates unique plots, three-dimensional characters, world-building elements, and narrative structures. Based on analysis of 50,000+ published stories.',
     content_type: ContentType.PROMPT,
     category: Category.CREATIVE,
     ai_models: [AIModel.CHATGPT, AIModel.CLAUDE, AIModel.GEMINI],
@@ -99,7 +127,8 @@ export const mockContentItems = [
     source_platform: SourcePlatform.MEDIUM,
     author: {
       name: 'Maya Patel',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150',
       reputation: 82,
       verified: false,
       social_links: { medium: '@writer-tools', instagram: '@maya_writes' }
@@ -114,7 +143,13 @@ export const mockContentItems = [
       comments: 89,
       bookmarks: 345
     },
-    tags: ['creative-writing', 'storytelling', 'character-development', 'plot-generation', 'world-building'],
+    tags: [
+      'creative-writing',
+      'storytelling',
+      'character-development',
+      'plot-generation',
+      'world-building'
+    ],
     price: 19.99,
     is_free: false,
     content_length: 1800,
@@ -134,7 +169,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-004',
     title: 'Data Analysis & Visualization Helper for Business Intelligence',
-    description: 'Transform raw data into actionable insights with AI prompts designed for statistical analysis, trend identification, and visualization recommendations. Supports Pandas, R, and SQL workflows.',
+    description:
+      'Transform raw data into actionable insights with AI prompts designed for statistical analysis, trend identification, and visualization recommendations. Supports Pandas, R, and SQL workflows.',
     content_type: ContentType.WORKFLOW,
     category: Category.ANALYTICS,
     ai_models: [AIModel.CHATGPT, AIModel.CLAUDE],
@@ -142,7 +178,8 @@ export const mockContentItems = [
     source_platform: SourcePlatform.HUGGING_FACE,
     author: {
       name: 'David Kim',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150',
       reputation: 93,
       verified: true,
       social_links: { linkedin: 'david-kim-data', github: 'dkim-analytics' }
@@ -157,8 +194,15 @@ export const mockContentItems = [
       comments: 134,
       bookmarks: 298
     },
-    tags: ['data-analysis', 'visualization', 'business-intelligence', 'pandas', 'sql', 'statistics'],
-    price: 35.00,
+    tags: [
+      'data-analysis',
+      'visualization',
+      'business-intelligence',
+      'pandas',
+      'sql',
+      'statistics'
+    ],
+    price: 35.0,
     is_free: false,
     content_length: 2800,
     difficulty_level: 'intermediate',
@@ -177,7 +221,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-005',
     title: 'Social Media Content Calendar Automation System',
-    description: 'Generate weeks of engaging social media content with this AI-powered system. Creates posts, captions, hashtag strategies, and optimal posting schedules. Analyzed 1M+ viral posts for patterns.',
+    description:
+      'Generate weeks of engaging social media content with this AI-powered system. Creates posts, captions, hashtag strategies, and optimal posting schedules. Analyzed 1M+ viral posts for patterns.',
     content_type: ContentType.WORKFLOW,
     category: Category.MARKETING,
     ai_models: [AIModel.CHATGPT, AIModel.GEMINI],
@@ -200,8 +245,14 @@ export const mockContentItems = [
       comments: 167,
       bookmarks: 456
     },
-    tags: ['social-media', 'content-calendar', 'automation', 'hashtags', 'engagement'],
-    price: 25.00,
+    tags: [
+      'social-media',
+      'content-calendar',
+      'automation',
+      'hashtags',
+      'engagement'
+    ],
+    price: 25.0,
     is_free: false,
     content_length: 2100,
     difficulty_level: 'beginner',
@@ -212,7 +263,13 @@ export const mockContentItems = [
       code_blocks: 3,
       images: 12,
       links: 9,
-      platforms_covered: ['Instagram', 'Twitter', 'LinkedIn', 'TikTok', 'Facebook'],
+      platforms_covered: [
+        'Instagram',
+        'Twitter',
+        'LinkedIn',
+        'TikTok',
+        'Facebook'
+      ],
       content_types: ['Posts', 'Stories', 'Reels', 'Carousels']
     }
   }),
@@ -220,7 +277,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-006',
     title: 'Technical Documentation Generator for API References',
-    description: 'Create clear, comprehensive technical documentation with AI prompts that structure complex information into user-friendly guides. Includes API references, tutorials, and troubleshooting sections.',
+    description:
+      'Create clear, comprehensive technical documentation with AI prompts that structure complex information into user-friendly guides. Includes API references, tutorials, and troubleshooting sections.',
     content_type: ContentType.PROMPT,
     category: Category.DEVELOPMENT,
     ai_models: [AIModel.CLAUDE, AIModel.CHATGPT],
@@ -228,10 +286,14 @@ export const mockContentItems = [
     source_platform: SourcePlatform.PERSONAL_BLOG,
     author: {
       name: 'Michael Zhang',
-      avatar: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=150',
       reputation: 90,
       verified: true,
-      social_links: { github: 'mzhang-tech-writer', linkedin: 'michael-zhang-docs' }
+      social_links: {
+        github: 'mzhang-tech-writer',
+        linkedin: 'michael-zhang-docs'
+      }
     },
     scraped_at: '2025-08-15T08:20:00Z',
     processed_at: '2025-08-15T08:55:00Z',
@@ -243,8 +305,14 @@ export const mockContentItems = [
       comments: 45,
       bookmarks: 189
     },
-    tags: ['technical-writing', 'documentation', 'api', 'developer-tools', 'guides'],
-    price: 40.00,
+    tags: [
+      'technical-writing',
+      'documentation',
+      'api',
+      'developer-tools',
+      'guides'
+    ],
+    price: 40.0,
     is_free: false,
     content_length: 3500,
     difficulty_level: 'advanced',
@@ -255,7 +323,12 @@ export const mockContentItems = [
       code_blocks: 25,
       images: 6,
       links: 18,
-      doc_types: ['API Reference', 'Tutorials', 'Troubleshooting', 'Quick Start'],
+      doc_types: [
+        'API Reference',
+        'Tutorials',
+        'Troubleshooting',
+        'Quick Start'
+      ],
       frameworks_supported: ['REST', 'GraphQL', 'gRPC', 'WebSockets']
     }
   }),
@@ -264,7 +337,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-007',
     title: 'Free Prompt Engineering Fundamentals',
-    description: 'Learn the basics of prompt engineering with this comprehensive free guide. Covers fundamental techniques, common pitfalls, and optimization strategies for better AI interactions.',
+    description:
+      'Learn the basics of prompt engineering with this comprehensive free guide. Covers fundamental techniques, common pitfalls, and optimization strategies for better AI interactions.',
     content_type: ContentType.TUTORIAL,
     category: Category.EDUCATION,
     ai_models: [AIModel.CHATGPT, AIModel.CLAUDE, AIModel.GEMINI],
@@ -287,7 +361,13 @@ export const mockContentItems = [
       comments: 234,
       bookmarks: 1234
     },
-    tags: ['prompt-engineering', 'ai-fundamentals', 'free', 'education', 'beginner-friendly'],
+    tags: [
+      'prompt-engineering',
+      'ai-fundamentals',
+      'free',
+      'education',
+      'beginner-friendly'
+    ],
     price: null,
     is_free: true,
     content_length: 4200,
@@ -307,7 +387,8 @@ export const mockContentItems = [
   createContentItem({
     id: 'ai-008',
     title: 'Machine Learning Model Evaluation Checklist',
-    description: 'Comprehensive checklist for evaluating ML models in production. Covers performance metrics, bias detection, data drift monitoring, and model interpretability. Open-source contribution.',
+    description:
+      'Comprehensive checklist for evaluating ML models in production. Covers performance metrics, bias detection, data drift monitoring, and model interpretability. Open-source contribution.',
     content_type: ContentType.TOOL,
     category: Category.DATA_SCIENCE,
     ai_models: [AIModel.CHATGPT],
@@ -315,7 +396,8 @@ export const mockContentItems = [
     source_platform: SourcePlatform.GITHUB,
     author: {
       name: 'Carlos Mendoza',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+      avatar:
+        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
       reputation: 85,
       verified: true,
       social_links: { github: 'cmendoza-mlops', linkedin: 'carlos-mendoza-ml' }
@@ -330,7 +412,13 @@ export const mockContentItems = [
       comments: 89,
       bookmarks: 345
     },
-    tags: ['machine-learning', 'model-evaluation', 'mlops', 'free', 'checklist'],
+    tags: [
+      'machine-learning',
+      'model-evaluation',
+      'mlops',
+      'free',
+      'checklist'
+    ],
     price: null,
     is_free: true,
     content_length: 1600,
@@ -349,16 +437,76 @@ export const mockContentItems = [
 ]
 
 export const mockCategories = [
-  { id: 'marketing', name: 'Marketing', count: 234, icon: '📈', description: 'Sales copy, ads, social media content' },
-  { id: 'development', name: 'Development', count: 189, icon: '💻', description: 'Code generation, debugging, documentation' },
-  { id: 'creative', name: 'Creative', count: 156, icon: '🎨', description: 'Writing, design, content creation' },
-  { id: 'analytics', name: 'Analytics', count: 98, icon: '📊', description: 'Data analysis, reporting, insights' },
-  { id: 'education', name: 'Education', count: 124, icon: '📚', description: 'Learning materials, explanations, tutorials' },
-  { id: 'business', name: 'Business', count: 167, icon: '💼', description: 'Strategy, planning, productivity' },
-  { id: 'data-science', name: 'Data Science', count: 145, icon: '🔬', description: 'ML models, data processing, analysis' },
-  { id: 'design', name: 'Design', count: 87, icon: '🎯', description: 'UI/UX, graphics, visual content' },
-  { id: 'writing', name: 'Writing', count: 203, icon: '✍️', description: 'Content creation, copywriting, blogs' },
-  { id: 'research', name: 'Research', count: 76, icon: '🔍', description: 'Academic papers, analysis, insights' }
+  {
+    id: 'marketing',
+    name: 'Marketing',
+    count: 234,
+    icon: '📈',
+    description: 'Sales copy, ads, social media content'
+  },
+  {
+    id: 'development',
+    name: 'Development',
+    count: 189,
+    icon: '💻',
+    description: 'Code generation, debugging, documentation'
+  },
+  {
+    id: 'creative',
+    name: 'Creative',
+    count: 156,
+    icon: '🎨',
+    description: 'Writing, design, content creation'
+  },
+  {
+    id: 'analytics',
+    name: 'Analytics',
+    count: 98,
+    icon: '📊',
+    description: 'Data analysis, reporting, insights'
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    count: 124,
+    icon: '📚',
+    description: 'Learning materials, explanations, tutorials'
+  },
+  {
+    id: 'business',
+    name: 'Business',
+    count: 167,
+    icon: '💼',
+    description: 'Strategy, planning, productivity'
+  },
+  {
+    id: 'data-science',
+    name: 'Data Science',
+    count: 145,
+    icon: '🔬',
+    description: 'ML models, data processing, analysis'
+  },
+  {
+    id: 'design',
+    name: 'Design',
+    count: 87,
+    icon: '🎯',
+    description: 'UI/UX, graphics, visual content'
+  },
+  {
+    id: 'writing',
+    name: 'Writing',
+    count: 203,
+    icon: '✍️',
+    description: 'Content creation, copywriting, blogs'
+  },
+  {
+    id: 'research',
+    name: 'Research',
+    count: 76,
+    icon: '🔍',
+    description: 'Academic papers, analysis, insights'
+  }
 ]
 
 export const mockStats = {
